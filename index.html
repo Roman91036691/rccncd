@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raccoon Coin Clicker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Екран гри -->
+  <div id="game-screen" class="screen active">
+    <div class="game-container">
+      <div id="score">0</div>
+      <img id="coin" src="coin.png" alt="Raccoon Coin" />
+      <div id="energy" style="margin-top: 10px; font-size: 20px; color: white;">3000 / 3000 🔋</div>
+
+    </div>
+  </div>
+
+  <!-- Екран магазину -->
+  <div id="shop-screen" class="screen">
+    <div class="shop-container">
+      <h1>🛒 Магазин</h1>
+      <div class="item">
+        <div class="item-title">💪 СИЛА КЛІКУ</div>
+        <div class="item-desc">+1 до очок за клік</div>
+        <button id="buy-click-power">Купити за 300 🪙</button>
+      </div>
+      
+      <!-- Товари додамо пізніше -->
+    </div>
+  </div>
+
+  <!-- Панель навігації -->
+  <div class="nav-bar">
+    <button id="btn-game" class="nav-button active">🦝</button>
+    <button id="btn-shop" class="nav-button">🛒</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
