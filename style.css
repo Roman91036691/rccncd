@@ -1,0 +1,115 @@
+/* Загальні налаштування */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  background: linear-gradient(to bottom, #ffe000, #2d2d2d);
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  padding-top: 60px;
+  flex-grow: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Рахунок */
+#score {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+/* Монета */
+#coin {
+  width: 150px;
+  transition: transform 0.15s cubic-bezier(0.34, 1.56, 0.64, 1);
+  user-select: none;
+  -webkit-tap-highlight-color: transparent; /* прибирає синій фон на мобільному */
+}
+
+/* Магазин */
+#shop-screen h2 {
+  font-size: 32px;
+  margin-top: 40px;
+}
+
+/* Нижня панель навігації */
+.nav {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 320px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.nav button {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  font-family: monospace;
+}
+
+.nav button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+
+.nav img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.85;
+}
+
+#energy {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #bdf;
+}
+
+#message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #ff5555;
+  background: rgba(0, 0, 0, 0.75);
+  padding: 20px 30px;
+  border-radius: 20px;
+  z-index: 99;
+  font-family: monospace;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#message.show {
+  opacity: 1;
+}
+

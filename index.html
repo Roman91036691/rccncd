@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raccoon Coin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" id="game-screen">
+    <div id="message" class="hidden">Немає енергії!</div>
+
+    <div id="score">0</div>
+    <div id="energy">🔋 3000 / 3000</div>
+    <img id="coin" src="coin.png" alt="Raccoon Coin">
+  </div>
+
+  <div class="container hidden" id="shop-screen">
+    <h2>Магазин</h2>
+    <!-- Тут будуть товари -->
+  </div>
+
+  <div class="nav">
+    <button id="game-btn">🦝</button>
+    <button id="shop-btn">🛒</button>
+  </div>
+  
+
+  <audio id="click-sound" src="click.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
